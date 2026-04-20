@@ -1,73 +1,107 @@
-# React + TypeScript + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+# Valentina Olmos — Developer Portfolio
+ 
+> 🐾 Portfolio personal de Valentina Olmos, desarrolladora de software fullstack en formación.
+> Personal portfolio of Valentina Olmos, fullstack software developer in training.
+ 
+---
+ 
+## 🇦🇷 Español
+ 
+### Sobre el proyecto
+ 
+Este es mi portfolio personal, diseñado y desarrollado desde cero. Refleja mi identidad como desarrolladora: código sólido, criterio visual y atención al detalle.
+ 
+### ✨ Características
+ 
+- Diseño dark mode con paleta rosa/rose personalizada
+- Totalmente responsive (mobile, tablet, desktop)
+- Secciones: Inicio, Sobre mí, Stack, Proyectos y Contacto
+- Navegación con scroll suave
+- Botón de descarga de CV
+- Links directos a proyectos y redes
+### 🛠️ Tecnologías utilizadas
+ 
+- **React** + **TypeScript**
+- **Tailwind CSS**
+- **Vite**
+### 🚀 Correr el proyecto localmente
+ 
+```bash
+git clone https://github.com/valentina1610/portfolio.git
+cd portfolio
+npm install
+npm run dev
 ```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+ 
+### 📁 Estructura
+ 
 ```
+src/
+├── components/
+│   ├── Navbar.tsx
+│   ├── Hero.tsx
+│   ├── About.tsx
+│   ├── Stack.tsx
+│   ├── Projects.tsx
+│   ├── Contact.tsx
+│   └── Footer.tsx
+└── App.tsx
+```
+ 
+### 📬 Contacto
+ 
+- 📧 valentinaolmos1610@gmail.com
+- 💼 [linkedin.com/in/valentina-olmos-0a06852bb](https://www.linkedin.com/in/valentina-olmos-0a06852bb/)
+- 🐙 [github.com/valentina1610](https://github.com/valentina1610)
+---
+ 
+## 🇺🇸 English
+ 
+### About the project
+ 
+This is my personal portfolio, designed and built from scratch. It reflects my identity as a developer: solid code, visual judgment, and attention to detail.
+ 
+### ✨ Features
+ 
+- Dark mode design with a custom pink/rose palette
+- Fully responsive (mobile, tablet, desktop)
+- Sections: Home, About, Stack, Projects and Contact
+- Smooth scroll navigation
+- CV download button
+- Direct links to projects and social media
+### 🛠️ Tech stack
+ 
+- **React** + **TypeScript**
+- **Tailwind CSS**
+- **Vite**
+### 🚀 Run locally
+ 
+```bash
+git clone https://github.com/valentina1610/portfolio.git
+cd portfolio
+npm install
+npm run dev
+```
+ 
+### 📁 Structure
+ 
+```
+src/
+├── components/
+│   ├── Navbar.tsx
+│   ├── Hero.tsx
+│   ├── About.tsx
+│   ├── Stack.tsx
+│   ├── Projects.tsx
+│   ├── Contact.tsx
+│   └── Footer.tsx
+└── App.tsx
+```
+ 
+### 📬 Contact
+ 
+- 📧 valentinaolmos1610@gmail.com
+- 💼 [linkedin.com/in/valentina-olmos-0a06852bb](https://www.linkedin.com/in/valentina-olmos-0a06852bb/)
+- 🐙 [github.com/valentina1610](https://github.com/valentina1610)
+---
+  
