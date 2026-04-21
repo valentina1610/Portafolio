@@ -8,6 +8,7 @@ const projects = [
     tech: ["PHP", "CSS", "Bootstrap"],
     type: "Pasantía",
     href: "https://ayuda.rubicom.ar/",
+    image: "/projects/rubicomImagen.jpg",
   },
   {
     title: "Sistema de login — PHP",
@@ -16,6 +17,7 @@ const projects = [
     tech: ["PHP", "JavaScript", "JSON"],
     type: "Proyecto personal",
     href: "https://github.com/valentina1610/Sistema_de_usuarios",
+    image: "/projects/sistemaLoginImagen.jpg",
   },
   {
     title: "Sistema de reservas — Hotel",
@@ -24,6 +26,7 @@ const projects = [
     tech: ["C#", ".NET", "MVC", "Patrones de diseño"],
     type: "Proyecto académico",
     href: "https://github.com/valentina1610/Hotel-System",
+    image: "/projects/hotelSistemaImagen.jpg",
   },
   {
     title: "CRUD de estudiantes — Angular",
@@ -32,14 +35,17 @@ const projects = [
     tech: ["Angular", "TypeScript", "HTML5", "Tailwind CSS"],
     type: "Proyecto académico",
     href: "https://github.com/valentina1610/CRUD-Estudiantes-Angular",
+    image: "/projects/crudEstudiantesImagen.jpg",
   },
 ];
 
 function Projects() {
   const [current, setCurrent] = useState(0);
 
-  const prev = () => setCurrent((i) => (i === 0 ? projects.length - 1 : i - 1));
-  const next = () => setCurrent((i) => (i === projects.length - 1 ? 0 : i + 1));
+  const prev = () =>
+    setCurrent((i) => (i === 0 ? projects.length - 1 : i - 1));
+  const next = () =>
+    setCurrent((i) => (i === projects.length - 1 ? 0 : i + 1));
 
   const project = projects[current];
 
@@ -48,6 +54,7 @@ function Projects() {
       id="projects"
       className="section-shell rounded-[2rem] px-6 py-10 sm:px-8 lg:px-12"
     >
+      {/* Header */}
       <div className="mb-8 flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
         <div>
           <p className="section-label">Proyectos</p>
@@ -58,7 +65,8 @@ function Projects() {
 
         <div className="flex items-center gap-3">
           <span className="text-sm text-[var(--color-muted)] whitespace-nowrap">
-            {String(current + 1).padStart(2, "0")} / {String(projects.length).padStart(2, "0")}
+            {String(current + 1).padStart(2, "0")} /{" "}
+            {String(projects.length).padStart(2, "0")}
           </span>
           <button
             onClick={prev}
@@ -75,37 +83,57 @@ function Projects() {
         </div>
       </div>
 
+      {/* Card */}
       <a
         href={project.href}
         target="_blank"
         rel="noreferrer"
-        className="glass-card group block rounded-[1.75rem] p-8 transition hover:-translate-y-1 hover:border-pink-300/30"
+        className="glass-card group grid lg:grid-cols-[1fr_1fr] rounded-[1.75rem] overflow-hidden transition hover:-translate-y-1 hover:border-pink-300/30"
       >
-        <div className="mb-6 flex items-center justify-between">
-          <span className="rounded-full border border-pink-300/20 bg-pink-400/10 px-3 py-1 text-xs uppercase tracking-[0.25em] text-pink-100/80">
-            {project.type}
-          </span>
-          <span className="text-pink-300 transition group-hover:translate-x-1">↗</span>
+        {/* Texto */}
+        <div className="flex flex-col justify-between p-7">
+          <div>
+            <div className="mb-5 flex items-center justify-between">
+              <span className="rounded-full border border-pink-300/20 bg-pink-400/10 px-3 py-1 text-xs uppercase tracking-[0.25em] text-pink-100/80">
+                {project.type}
+              </span>
+              <span className="text-pink-300 transition group-hover:translate-x-1">↗</span>
+            </div>
+
+            <h3 className="font-serif text-2xl text-white sm:text-3xl">
+              {project.title}
+            </h3>
+
+            <p className="mt-3 leading-7 text-[var(--color-muted)] text-sm">
+              {project.description}
+            </p>
+          </div>
+
+          <div className="mt-6 flex flex-wrap gap-2">
+            {project.tech.map((item) => (
+              <span
+                key={item}
+                className="rounded-full border border-white/10 px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-pink-100/75"
+              >
+                {item}
+              </span>
+            ))}
+          </div>
         </div>
 
-        <h3 className="font-serif text-3xl text-white sm:text-4xl">{project.title}</h3>
-        <p className="mt-4 max-w-2xl leading-7 text-[var(--color-muted)]">
-          {project.description}
-        </p>
-
-        <div className="mt-6 flex flex-wrap gap-2">
-          {project.tech.map((item) => (
-            <span
-              key={item}
-              className="rounded-full border border-white/10 px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-pink-100/75"
-            >
-              {item}
-            </span>
-          ))}
+        {/* Imagen */}
+        <div className="relative h-64 lg:h-auto overflow-hidden">
+          <img
+            src={project.image}
+            alt={project.title}
+            className="w-full h-full object-cover transition duration-500 group-hover:scale-105"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/30 to-transparent lg:bg-gradient-to-l" />
         </div>
       </a>
 
-      <div className="mt-4 flex justify-center gap-2">
+      {/* Dots */}
+      <div className="mt-5 flex justify-center gap-2">
         {projects.map((_, i) => (
           <button
             key={i}
