@@ -24,7 +24,7 @@ function About() {
 
       <div className="grid gap-4 md:grid-cols-3">
         {highlights.map(({ label, text }) => (
-          <div key={label} className="glass-card rounded-[1.75rem] p-6">
+          <div key={label} className="glass-card rounded-[1.75rem] p-6 transition hover:-translate-y-1">
             <p className="mb-3 text-sm font-semibold uppercase tracking-[0.25em] text-pink-200/60">
               {label}
             </p>

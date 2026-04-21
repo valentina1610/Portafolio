@@ -40,9 +40,11 @@ button {
 #root {
   min-height: 100vh;
 }
-/* section[id] {
-  scroll-margin-top: 81px;
-} */
+  section[id] {
+    scroll-margin-top: 81px;
+} 
+
+
 .glass-card {
   border: 1px solid var(--color-line);
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));

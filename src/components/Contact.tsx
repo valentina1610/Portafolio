@@ -14,11 +14,6 @@ const links = [
     value: "github.com/valentina1610",
     href: "https://github.com/valentina1610",
   },
-  {
-    label: "WhatsApp",
-    value: "+54 9 223 586-1375",
-    href: "https://wa.me/5492235861375",
-  },
 ];
 
 function Contact() {
@@ -40,7 +35,7 @@ function Contact() {
 
         <div className="glass-card rounded-[1.75rem] p-6">
           <p className="mb-5 text-sm uppercase tracking-[0.28em] text-pink-200/60">
-            Canales principales 🐾
+            Canales principales
           </p>
 
           <div className="space-y-3">

@@ -53,11 +53,11 @@ function Hero() {
           </div>
         </div>
 
-        <div className="glass-card cat-ears relative overflow-hidden rounded-[2rem] p-6 space-y-5">
+        <div className="glass-card relative overflow-hidden rounded-[2rem] p-6 space-y-5">
           <div className="flex items-center justify-between">
             <div>
               <p className="text-xs uppercase tracking-[0.35em] text-pink-200/60">Estado actual</p>
-              <p className="mt-1 font-serif text-2xl text-white">Disponible 🐾</p>
+              <p className="mt-1 font-serif text-2xl text-white">Disponible</p>
             </div>
             <span className="rounded-full border border-pink-300/20 bg-pink-400/10 px-3 py-1 text-xs text-pink-100/80">
               Junior · Trainee
