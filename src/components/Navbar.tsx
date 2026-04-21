@@ -16,7 +16,7 @@ function Navbar() {
           <div>
             <p className="font-serif text-2xl leading-none text-white">Valentina</p>
             <p className="text-[10px] uppercase tracking-[0.35em] text-pink-200/70">
-              Developer Portfolio
+              Desarrolladora web fullstack
             </p>
           </div>
         </a>

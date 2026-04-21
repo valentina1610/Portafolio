@@ -22,7 +22,7 @@ function Hero() {
           </h1>
 
           <h2 className="mt-4 text-xl sm:text-2xl lg:text-3xl font-semibold text-white">
-            Desarrolladora Fullstack
+            Desarrolladora web Fullstack
           </h2>
 
           <p className="mt-4 max-w-2xl text-sm sm:text-base leading-7 text-[var(--color-muted)]">

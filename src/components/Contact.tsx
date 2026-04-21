@@ -14,6 +14,11 @@ const links = [
     value: "github.com/valentina1610",
     href: "https://github.com/valentina1610",
   },
+  {
+    label: "Whatsapp",
+    value: "+54 9 223 586-1375",
+    href: "https://wa.me/542235861375",
+  },
 ];
 
 function Contact() {
