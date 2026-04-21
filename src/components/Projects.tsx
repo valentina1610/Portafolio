@@ -57,7 +57,7 @@ function Projects() {
         </div>
 
         <div className="flex items-center gap-3">
-          <span className="text-sm text-[var(--color-muted)]">
+          <span className="text-sm text-[var(--color-muted)] whitespace-nowrap">
             {String(current + 1).padStart(2, "0")} / {String(projects.length).padStart(2, "0")}
           </span>
           <button
