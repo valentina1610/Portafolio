@@ -44,7 +44,7 @@ function Hero() {
               Contacto profesional
             </a>
             <a
-              href="/public/ValentinaOlmos_CV_2026.docx.pdf"
+              href="/ValentinaOlmos_CV_2026.pdf"
               download
               className="rounded-full border border-pink-300/25 bg-pink-400/10 px-6 py-3 text-center text-sm font-semibold text-pink-100 transition hover:bg-pink-400/20"
             >
