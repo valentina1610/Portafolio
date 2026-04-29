@@ -11,9 +11,9 @@ const projects = [
     image: "/projects/rubicomImagen.jpg",
   },
   {
-    title: "Sistema de login — PHP",
+    title: "Sistema de gestión base — PHP",
     description:
-      "Sistema de autenticación con validación de usuarios y persistencia en JSON, pensado para practicar lógica, estructura y flujo de acceso seguro.",
+      "Sistema de gestión desarrollado en PHP puro con autenticación, control de permisos por roles y almacenamiento en JSON. Diseñado con arquitectura modular y preparado para futuras expansiones.",
     tech: ["PHP", "JavaScript", "JSON"],
     type: "Proyecto personal",
     href: "https://github.com/valentina1610/Sistema_de_usuarios",
