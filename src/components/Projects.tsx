@@ -20,14 +20,15 @@ const projects = [
     image: "/projects/sistemaLoginImagen.jpg",
   },
   {
-    title: "Sistema de reservas — Hotel",
+    title: "Landing page — Artista plástica",
     description:
-      "Sistema de reservas en consola con C#, basado en arquitectura MVC y patrones Facade, Strategy, Builder y Observer. Creación de reservas con múltiples habitaciones y cálculo del precio final.",
-    tech: ["C#", ".NET", "MVC", "Patrones de diseño"],
-    type: "Proyecto académico",
-    href: "https://github.com/valentina1610/Hotel-System",
-    image: "/projects/hotelSistemaImagen.jpg",
-  },
+    "Portfolio artístico desarrollado con React y Vite. Incluye galería de obras con modal interactivo, secciones de clases, contacto directo por WhatsApp y diseño responsive con estética tipo acuarela.",
+    tech: ["React", "Vite", "CSS", "Responsive Design"],
+    type: "Proyecto a pedido",
+    href: "https://portafolio-maria-teresa.vercel.app/",
+    image: "/projects/teresaLanding.png",
+},
+ 
   {
     title: "CRUD de estudiantes — Angular",
     description:
