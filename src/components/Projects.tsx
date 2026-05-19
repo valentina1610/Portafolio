@@ -28,7 +28,15 @@ const projects = [
     href: "https://portafolio-maria-teresa.vercel.app/",
     image: "/projects/teresaLanding.png",
 },
- 
+  {
+    title: "Sistema de gestión hotelera — C#",
+    description:
+      "Sistema de gestión hotelera desarrollado en C# con arquitectura MVC, orientado a la administración de reservas, habitaciones y clientes, aplicando lógica de negocio y persistencia de datos.",
+    tech: ["C#", ".NET", "MVC", "JSON"],
+    type: "Proyecto académico",
+    href: "https://github.com/valentina1610/Hotel-System",
+    image: "/projects/hotel.system.png",
+  },
   {
     title: "CRUD de estudiantes — Angular",
     description:
