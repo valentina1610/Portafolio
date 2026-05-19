@@ -35,7 +35,7 @@ const projects = [
     tech: ["C#", ".NET", "MVC", "JSON"],
     type: "Proyecto académico",
     href: "https://github.com/valentina1610/Hotel-System",
-    image: "/projects/hotel.system.png",
+    image: "/projects/hotel.system.jpg",
   },
   {
     title: "CRUD de estudiantes — Angular",
